@@ -6,27 +6,41 @@ import MainLayout from "@/layouts/MainLayout.astro";
   title="devChallenges | Join our newsletter"
   description="A coding challenge from devChallenges.io"
 >
-  <section>
-    <div>
-      <img src="/logo.svg" alt="Our Logo" />
-      <h1>Join our newsletter</h1>
-      <p>
-        Keep up with our latest collections, exclusive deals, and special offers! We introduce a new
-        collection every week, so stay tuned to snag the hottest items just for you.
+  <section class="mx-auto flex h-screen max-w-md flex-col justify-center gap-y-16 px-4">
+    <div class="flex flex-col items-center gap-y-4">
+      <img src="/logo.svg" alt="Our Logo" class="mx-auto" />
+      <h1 class="text-theme-deep-black text-4xl font-semibold">Join our newsletter</h1>
+      <p class="text-theme-charcoal-gray/50 text-center text-lg font-medium">
+        <span class="block"
+          >Keep up with our latest collections, exclusive deals, and special offers!</span
+        >
+        <span class="block"
+          >We introduce a new collection every week, so stay tuned to snag the hottest items just
+          for you.
+        </span>
       </p>
     </div>
-    <form action="submit">
-      <div>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Enter your email address"
-          required
-        />
-        <button type="submit">Subscribe now</button>
-      </div>
-    </form>
-    <p>Your email is 100% confidential and won't send you any spam.</p>
+
+    <div class="bg-theme-pure-white shadow-theme w-md rounded-xl p-8">
+      <form>
+        <div class="flex flex-col gap-y-3">
+          <input
+            class="border-theme-charcoal-gray/10 bg-theme-mist-gray w-full rounded-xl border py-5 text-center"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <button
+            type="submit"
+            class="bg-theme-royal-blue text-theme-pure-white mt-4 w-full rounded-xl py-5"
+          >
+            Subscribe now
+          </button>
+          <p class="mt-4">Your email is 100% confidential and won't send you any spam.</p>
+        </div>
+      </form>
+    </div>
   </section>
 </MainLayout>
