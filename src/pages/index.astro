@@ -6,5 +6,24 @@ import MainLayout from "@/layouts/MainLayout.astro";
   title="devChallenges | Join our newsletter"
   description="A coding challenge from devChallenges.io"
 >
-  <!-- Begin your journey here... -->
+  <section>
+    <h1>Join our newsletter</h1>
+    <p>
+      Keep up with our latest collections, exclusive deals, and special offers! We introduce a new
+      collection every week, so stay tuned to snag the hottest items just for you.
+    </p>
+    <form action="submit">
+      <div>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email address"
+          required
+        />
+        <button type="submit">Subscribe now</button>
+      </div>
+    </form>
+    <p>Your email is 100% confidential and won't send you any spam.</p>
+  </section>
 </MainLayout>
