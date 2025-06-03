@@ -7,7 +7,7 @@ import MainLayout from "@/layouts/MainLayout.astro";
   description="A devChallenges.io coding challenge."
 >
   <section class="mx-auto flex h-screen max-w-md flex-col justify-center gap-y-16 px-4">
-    <div class="flex flex-col items-center gap-y-4">
+    <div class="flex flex-col items-center gap-y-5">
       <img src="/logo.svg" alt="Our Logo" class="mx-auto" />
       <h1 class="text-theme-deep-black text-4xl font-semibold">Join our newsletter</h1>
       <p class="text-theme-charcoal-gray/50 text-center text-lg font-medium">
@@ -25,7 +25,8 @@ import MainLayout from "@/layouts/MainLayout.astro";
       <form>
         <div class="flex flex-col gap-y-3">
           <input
-            class="border-theme-charcoal-gray/10 bg-theme-mist-gray w-full rounded-xl border py-5 text-center"
+            class="border-theme-charcoal-gray/10 bg-theme-mist-gray/20 placeholder:text-theme-charcoal-gray focus:border-theme-royal-blue focus:ring-theme-royal-blue text-theme-charcoal-gray w-full rounded-xl border px-2 py-5 text-center text-lg font-medium placeholder:text-lg placeholder:font-medium focus:ring-2 focus:outline-none"
+            type="text"
             type="email"
             id="email"
             name="email"
@@ -34,7 +35,7 @@ import MainLayout from "@/layouts/MainLayout.astro";
           />
           <button
             type="submit"
-            class="bg-theme-royal-blue text-theme-pure-white mt-4 w-full rounded-xl py-5"
+            class="bg-theme-royal-blue text-theme-pure-white mt-4 w-full cursor-pointer rounded-xl py-5 text-lg font-medium"
           >
             Subscribe now
           </button>
