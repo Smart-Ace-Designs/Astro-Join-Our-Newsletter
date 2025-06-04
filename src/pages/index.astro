@@ -6,11 +6,11 @@ import MainLayout from "@/layouts/MainLayout.astro";
   title="devChallenges | Join our newsletter"
   description="A devChallenges.io coding challenge."
 >
-  <section class="mx-auto flex h-screen max-w-md flex-col justify-center gap-y-16 px-4">
-    <div class="flex flex-col items-center gap-y-5">
+  <section class="mx-auto flex h-screen max-w-3xl flex-col items-center justify-center gap-y-16">
+    <div class="flex flex-col items-center gap-y-7 px-2">
       <img src="/logo.svg" alt="Our Logo" class="mx-auto" />
-      <h1 class="text-theme-deep-black text-4xl font-semibold">Join our newsletter</h1>
-      <p class="text-theme-charcoal-gray/50 text-center text-lg font-medium">
+      <h1 class="text-theme-deep-black text-5xl font-semibold">Join our newsletter</h1>
+      <p class="text-theme-charcoal-gray/70 text-center text-xl font-medium">
         <span class="block"
           >Keep up with our latest collections, exclusive deals, and special offers!</span
         >
@@ -21,11 +21,11 @@ import MainLayout from "@/layouts/MainLayout.astro";
       </p>
     </div>
 
-    <div class="bg-theme-pure-white shadow-theme w-md rounded-xl p-8">
+    <div class="bg-theme-pure-white shadow-theme w-[550px] rounded-2xl p-6">
       <form>
         <div class="flex flex-col gap-y-3">
           <input
-            class="border-theme-charcoal-gray/10 bg-theme-mist-gray/20 placeholder:text-theme-charcoal-gray focus:border-theme-royal-blue focus:ring-theme-royal-blue text-theme-charcoal-gray w-full rounded-xl border px-2 py-5 text-center text-lg font-medium placeholder:text-lg placeholder:font-medium focus:ring-2 focus:outline-none"
+            class="border-theme-charcoal-gray/10 bg-theme-mist-gray/20 placeholder:text-theme-charcoal-gray focus:border-theme-royal-blue focus:ring-theme-royal-blue text-theme-charcoal-gray text-md placeholder:text-md w-full rounded-xl border px-2 py-4 text-center font-medium placeholder:font-medium focus:ring-2 focus:outline-none"
             type="text"
             type="email"
             id="email"
@@ -35,11 +35,13 @@ import MainLayout from "@/layouts/MainLayout.astro";
           />
           <button
             type="submit"
-            class="bg-theme-royal-blue text-theme-pure-white mt-4 w-full cursor-pointer rounded-xl py-5 text-lg font-medium"
+            class="bg-theme-royal-blue text-theme-pure-white text-md mt-4 w-full cursor-pointer rounded-xl py-4 font-medium"
           >
             Subscribe now
           </button>
-          <p class="mt-4">Your email is 100% confidential and won't send you any spam.</p>
+          <p class="text-theme-charcoal-gray mt-3 text-center text-sm">
+            Your email is 100% confidential and won't send you any spam.
+          </p>
         </div>
       </form>
     </div>
