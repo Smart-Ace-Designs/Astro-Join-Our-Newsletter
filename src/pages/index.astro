@@ -8,10 +8,14 @@ import MainLayout from "@/layouts/MainLayout.astro";
 >
   <section
     class="mx-auto flex h-screen max-w-3xl flex-col items-center justify-center gap-y-16 px-4"
+    aria-labelledby="newsletter-heading"
   >
     <div class="flex flex-col items-center gap-y-5 px-2 sm:gap-y-7">
       <img src="/logo.svg" alt="Our Logo" class="mx-auto" />
-      <h1 class="text-theme-deep-black text-center text-[2rem] font-semibold sm:text-5xl">
+      <h1
+        class="text-theme-deep-black text-center text-[2rem] font-semibold sm:text-5xl"
+        id="newsletter-heading"
+      >
         Join our newsletter
       </h1>
       <p class="text-theme-charcoal-gray/70 text-md text-center font-medium sm:text-xl">
@@ -26,24 +30,26 @@ import MainLayout from "@/layouts/MainLayout.astro";
     </div>
 
     <div class="bg-theme-pure-white shadow-theme w-[380px] rounded-2xl p-6 sm:w-[550px]">
-      <form>
-        <div class="flex flex-col gap-y-3">
+      <form aria-label="Newsletter Signup Form">
+        <div class="flex flex-col gap-y-3" role="group" aria-labelledby="newsletter-heading">
           <input
             class="border-theme-charcoal-gray/10 bg-theme-mist-gray/20 placeholder:text-theme-charcoal-gray focus:border-theme-royal-blue focus:ring-theme-royal-blue text-theme-charcoal-gray text-md placeholder:text-md w-full rounded-xl border px-2 py-4 text-center font-medium placeholder:font-medium focus:ring-2 focus:outline-none"
-            type="text"
             type="email"
             id="email"
             name="email"
+            aria-required="true"
+            aria-describedby="email-description"
             placeholder="Enter your email address"
             required
           />
           <button
             type="submit"
             class="bg-theme-royal-blue text-theme-pure-white text-md mt-4 w-full cursor-pointer rounded-xl py-4 font-medium"
+            aria-label="Subscribe to Newsletter"
           >
             Subscribe now
           </button>
-          <p class="text-theme-charcoal-gray mt-3 text-sm sm:text-center">
+          <p class="text-theme-charcoal-gray mt-3 text-sm sm:text-center" id="email-description">
             Your email is 100% confidential and won't send you any spam.
           </p>
         </div>
