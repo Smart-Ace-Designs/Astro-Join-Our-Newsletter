@@ -6,11 +6,15 @@ import MainLayout from "@/layouts/MainLayout.astro";
   title="devChallenges | Join our newsletter"
   description="A devChallenges.io coding challenge."
 >
-  <section class="mx-auto flex h-screen max-w-3xl flex-col items-center justify-center gap-y-16">
-    <div class="flex flex-col items-center gap-y-7 px-2">
+  <section
+    class="mx-auto flex h-screen max-w-3xl flex-col items-center justify-center gap-y-16 px-4"
+  >
+    <div class="flex flex-col items-center gap-y-5 px-2 sm:gap-y-7">
       <img src="/logo.svg" alt="Our Logo" class="mx-auto" />
-      <h1 class="text-theme-deep-black text-5xl font-semibold">Join our newsletter</h1>
-      <p class="text-theme-charcoal-gray/70 text-center text-xl font-medium">
+      <h1 class="text-theme-deep-black text-center text-[2rem] font-semibold sm:text-5xl">
+        Join our newsletter
+      </h1>
+      <p class="text-theme-charcoal-gray/70 text-md text-center font-medium sm:text-xl">
         <span class="block"
           >Keep up with our latest collections, exclusive deals, and special offers!</span
         >
@@ -21,7 +25,7 @@ import MainLayout from "@/layouts/MainLayout.astro";
       </p>
     </div>
 
-    <div class="bg-theme-pure-white shadow-theme w-[550px] rounded-2xl p-6">
+    <div class="bg-theme-pure-white shadow-theme w-[380px] rounded-2xl p-6 sm:w-[550px]">
       <form>
         <div class="flex flex-col gap-y-3">
           <input
@@ -39,7 +43,7 @@ import MainLayout from "@/layouts/MainLayout.astro";
           >
             Subscribe now
           </button>
-          <p class="text-theme-charcoal-gray mt-3 text-center text-sm">
+          <p class="text-theme-charcoal-gray mt-3 text-sm sm:text-center">
             Your email is 100% confidential and won't send you any spam.
           </p>
         </div>
