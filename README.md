@@ -62,8 +62,7 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-Semantic HTML5 markup
-
+- Semantic HTML5 markup
 - Flexbox
 - [Astro](https://astro.build/)
 - [Tailwind](https://tailwindcss.com/)
