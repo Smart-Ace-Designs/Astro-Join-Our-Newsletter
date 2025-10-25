@@ -9,31 +9,7 @@
   --color-theme-royal-blue: #284bce;
   --color-theme-charcoal-gray: #394150;
 
-  --font-sans: "Poppins", "sans-serif";
+  --font-poppins: "Poppins", "sans-serif";
 
   --shadow-theme: 0px 20px 30px 0px rgba(0, 0, 0, 0.03), 0px 8px 12px 0px rgba(0, 0, 0, 0.08);
-}
-
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/Poppins-Regular.ttf") format("truetype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  src: url("/fonts/Poppins-Medium.ttf") format("truetype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  src: url("/fonts/Poppins-SemiBold.ttf") format("truetype");
-  font-display: swap;
 }
