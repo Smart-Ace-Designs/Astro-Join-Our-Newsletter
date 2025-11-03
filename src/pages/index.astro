@@ -13,27 +13,27 @@ import MainLayout from "@/layouts/MainLayout.astro";
     <div class="flex flex-col items-center gap-y-5 px-2 sm:gap-y-7">
       <img src="/logo.svg" alt="Our Logo" class="mx-auto" width="52" height="52" />
       <h1
-        class="text-theme-deep-black text-center text-[2rem] font-semibold sm:text-5xl"
+        class="text-center text-[2rem] font-semibold text-theme-deep-black sm:text-5xl"
         id="newsletter-heading"
       >
         Join our newsletter
       </h1>
       <p class="text-md text-center font-medium sm:text-xl">
-        <span class="text-theme-charcoal-gray/75 block"
+        <span class="block text-theme-charcoal-gray/75"
           >Keep up with our latest collections, exclusive deals, and special offers!</span
         >
-        <span class="text-theme-charcoal-gray/75 block"
+        <span class="block text-theme-charcoal-gray/75"
           >We introduce a new collection every week, so stay tuned to snag the hottest items just
           for you.
         </span>
       </p>
     </div>
 
-    <div class="bg-theme-pure-white shadow-theme w-[380px] rounded-2xl p-6 sm:w-[550px]">
+    <div class="w-[380px] rounded-2xl bg-theme-pure-white p-6 shadow-theme sm:w-[550px]">
       <form aria-label="Newsletter Signup Form">
         <div class="flex flex-col gap-y-3" role="group" aria-labelledby="newsletter-heading">
           <input
-            class="border-theme-charcoal-gray/10 bg-theme-mist-gray/20 placeholder:text-theme-charcoal-gray focus:border-theme-royal-blue focus:ring-theme-royal-blue text-theme-charcoal-gray text-md placeholder:text-md w-full rounded-xl border px-2 py-4 text-center font-medium placeholder:font-medium focus:ring-2 focus:outline-none"
+            class="text-md placeholder:text-md w-full rounded-xl border border-theme-charcoal-gray/10 bg-theme-mist-gray/20 px-2 py-4 text-center font-medium text-theme-charcoal-gray placeholder:font-medium placeholder:text-theme-charcoal-gray focus:border-theme-royal-blue focus:ring-2 focus:ring-theme-royal-blue focus:outline-none"
             type="email"
             id="email"
             name="email"
@@ -44,12 +44,12 @@ import MainLayout from "@/layouts/MainLayout.astro";
           />
           <button
             type="submit"
-            class="bg-theme-royal-blue text-theme-pure-white text-md mt-4 w-full cursor-pointer rounded-xl py-4 font-medium"
+            class="text-md mt-4 w-full cursor-pointer rounded-xl bg-theme-royal-blue py-4 font-medium text-theme-pure-white"
             aria-label="Subscribe now"
           >
             Subscribe now
           </button>
-          <p class="text-theme-charcoal-gray mt-3 text-sm sm:text-center" id="email-description">
+          <p class="mt-3 text-sm text-theme-charcoal-gray sm:text-center" id="email-description">
             Your email is 100% confidential and won't send you any spam.
           </p>
         </div>
